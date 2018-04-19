@@ -1,0 +1,87 @@
+@keyframes toggle {
+  0%,
+  49% {
+    opacity: 0;
+  }
+  50%,
+  100% {
+    opacity: 1;
+  }
+}
+@font-face {
+  font-family: 'Sinclair ZX Spectrum ES';
+  src: url('assets/fonts/sinclair/Sinclair ZX Spectrum ES.ttf');
+}
+
+.underscore {
+  opacity: 0;
+  animation: 1s toggle infinite step-end;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+body {
+  max-width: 500px;
+  margin: auto;
+  font-family: 'Sinclair ZX Spectrum ES';
+  background-color: black;
+}
+
+.info {
+  margin-top: 25%;
+  color: #638c02;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+a {
+  color: red;
+}
+
+.step-1 {
+  animation: 1s toggle;
+}
+
+.step-2 {
+  animation: 4s toggle;
+}
+
+.step-3 {
+  animation: 8s toggle;
+}
+
+.step-4 {
+  animation: 13s toggle;
+}
+
+.step-5 {
+  animation: 16s toggle;
+}
+
+.new-name {
+  color: magenta;
+}
+
+.resources {
+  color: aqua;
+}
+
+.name {
+  color: #acafaa;
+}
+
+@media(max-width: 480px) {
+  .info {
+    font-size: 16px;
+  }
+}
